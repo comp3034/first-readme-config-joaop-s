@@ -15,4 +15,3 @@ int main(){//Escopo Main - Inicio
 
     return 0;//Encerra o Programa
 }//Escopo Main - Fim
-
