@@ -1,20 +1,21 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <stdio.h>//Biblioteca - Input Output
+#include <stdlib.h>//Biblioteca - C
 
-int main(){
+int main(){//Escopo Main - Inicio
 
-    float salario, reajuste;
-
-    printf("Insira o salario!\n");
-    scanf("%f",&salario);
-
-    printf("Insira o reajuste!\n");
-    scanf("%f",&reajuste);
-
-    salario=(salario + (salario*reajuste)/100);
-
-    printf("Salario reajustado: %.2f!\n",salario);
+    float salario, reajuste;//Declara - Declara as variaveis salario e reajuste - Real
 
 
-    return 0;
-}
+    printf("Insira o salario!\n");//Exibe - Instrui o usuario a inserir o salário.
+    scanf("%f",&salario);//Entrada - Recebe a entrada do usuario e atribui a variavel salario.
+
+    printf("Insira o reajuste!\n");//Exibe - Instrui o usuario a inserir o reajuste.
+    scanf("%f",&reajuste);//Entrada - Recebe a entrada do usuario e atribui a variavel reajuste.
+
+    salario=(salario + (salario*reajuste)/100);//Calcula salario - Salario recebe salario + valor reajuste.
+
+    printf("Salario reajustado: %.2f!\n",salario);//Exibe - Exibe o salario inserido já reajustado.
+
+
+    return 0;//Encerra o programa.
+}//Escopo Main - Fim
