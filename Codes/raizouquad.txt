@@ -1,0 +1,21 @@
+#include <stdio.h>//Biblioteca - Input Output
+#include <stdlib.h>//Biblioteca - C
+#include <math.h>//Biblioteca - Math.h (utilizar a função sqrt)
+
+int main(){//Escopo Main - Inicio
+
+    float numero;//Declara numero - Real
+
+    printf("Insira o numero!\n");//Exibe - Instrui o usuario a inserir o número
+    scanf("%f",&numero);//Entrada - Recebe o numero inserido pelo usuário
+
+    if(numero >= 0){//Estrutura de condição IF Inicio - Se o numero for maior igual a 0..
+        numero = sqrt(numero);//Calcula a raiz quadrado do número...
+        printf("Raiz quadrada do numero e igual a: %.2f",numero);//Exibe - Exibe a raiz qudrada do número
+    } else{//Estrutura de condição IF Else - Se número for menor que 0...
+        numero = numero * numero;//Calcula o quadrado do número
+        printf("Quadrado do numero e: %.2f",numero);//Exibe - Exibe o quadrado do número..
+    }//Estrutura de condição IF Inicio - Se o numero for maior igual a 0..
+
+    return 0;//Encerra o programa
+}//Escopo Main - Fim
